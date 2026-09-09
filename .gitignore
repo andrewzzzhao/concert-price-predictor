@@ -1,0 +1,18 @@
+# Virtual environment (never push library binaries)
+venv/
+ENV/
+env/
+
+# Environment variables & API keys (critical security)
+.env
+
+# Raw or large data files
+data/raw/
+*.csv
+*.parquet
+*.json
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
