@@ -2,6 +2,7 @@
 venv/
 ENV/
 env/
+.venv/
 
 # Environment variables & API keys (critical security)
 .env
@@ -9,11 +10,13 @@ env/
 # Raw or large data files
 data/raw/
 *.csv
-*.parquet
 *.json
+*.parquet
+
+# Whitelist the reference data required by predict.py
+!train_engineered.parquet
 
 # Python bytecode and caches
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
-*.parquet
